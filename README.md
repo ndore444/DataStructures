@@ -1,2 +1,4 @@
 # DataStructures
-A collection of assignments from the class 2421
+Collection of assigned Programs from class CSCI 2421
+
+To view a program please select the assignment through the repository branches :)
