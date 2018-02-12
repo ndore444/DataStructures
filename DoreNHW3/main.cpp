@@ -7,10 +7,25 @@
  */
 
 #include <iostream>
+#include <fstream>
+#include "mystring.h"
+
 using namespace std;
+using namespace hw4;
+
+//function declarations
+
+void formatInput(ifstream _fin, ofstream _fout, my_string _fileName);
 
 int main( )
 {
+	my_string fileName = "data.txt";
+
+	ifstream inStream;
+	ofstream outStream;
+
+	formatInput
+
 	/*
 	Remember to
 	rename the files! :)
@@ -20,4 +35,11 @@ int main( )
 	*/
     system("Pause");
     return 0;
+}
+
+//function definitions
+
+void formatInput(ifstream _fin, ofstream _fout, my_string _fileName)
+{
+
 }

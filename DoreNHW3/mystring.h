@@ -1,11 +1,3 @@
-#pragma once
-class mystring
-{
-public:
-	mystring();
-	~mystring();
-};
-
 // FILE: mystring.h
 // CLASS PROVIDED: my_string
 //   This is a simple version of the Standard Library string.
@@ -90,7 +82,13 @@ public:
 
 #ifndef MYSTRING_H
 #define MYSTRING_H
-#include <cstdlib>  // Provides size_t
+#include <cstdlib>	    // Provides size_t
+#include <ctype.h>		// Provides stream tools
+#include <assert.h>		// Provides assert()
+#include <string.h>		// Provides strcpy(), strcat(), strlen(), strcmp()
+#include <stdlib.h>		// Provides size_t, NULL
+#include <iostream>		// Provides stream types
+#include <vector>		// provides vector options
 
 namespace hw4
 {
