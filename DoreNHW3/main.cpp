@@ -15,16 +15,17 @@ using namespace hw4;
 
 //function declarations
 
-void formatInput(ifstream _fin, ofstream _fout, my_string _fileName);
+void formatInput(ifstream& _fin, ofstream& _fout, my_string _fileName);
 
 int main( )
 {
 	my_string fileName = "data.txt";
 
-	ifstream inStream;
-	ofstream outStream;
+	ifstream fin;
+	ofstream fout;
 
-	formatInput
+
+	formatInput(fin, fout, fileName);
 
 	/*
 	Remember to
@@ -39,7 +40,7 @@ int main( )
 
 //function definitions
 
-void formatInput(ifstream _fin, ofstream _fout, my_string _fileName)
+void formatInput(ifstream& _fin, ofstream& _fout, my_string _fileName)
 {
 
 }
