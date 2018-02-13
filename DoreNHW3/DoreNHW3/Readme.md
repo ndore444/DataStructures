@@ -1,9 +1,9 @@
 *******************************************************
-*  Name      :          
-*  Student ID:                 
+*  Name      :  Nathaniel Dore
+*  Student ID:  105956145
 *  Class     :  CSC 2421           
-*  HW#       :  1                
-*  Due Date  :  Jan. 7, 2013
+*  HW#       :  3                
+*  Due Date  :  12FEB2018
 *******************************************************
 
 
@@ -14,9 +14,12 @@
 *  Description of the program
 *******************************************************
 
-The program "matrix" reads integers from a data file, and uses
-the data to implement two matrices.  It then outputs the matrices,
-and computes and outputs the sum and product of the matrices.
+The program is meant to format a input file called data.txt. The file is 
+formatted so that there is a max number of characters per line. This max 
+number is provided by the user. If the limit is exceeded, a newline 
+character is inserted. If this occurs during the middle of a word, a
+ hyphen distinguishes the continuation of the word on the next line.
+ The new created data file is then stored in "data.out"
 
 
 *******************************************************
@@ -25,23 +28,17 @@ and computes and outputs the sum and product of the matrices.
 
 Name:  main.cpp
    Main program.  This is the driver program that calls sub-functions
-   to read data from an input file, use the data to create two matrices,
-   and compute and display their sum and product.
+   to read data from an input file, and reformat the file using the specified
+   circumstances.
 
-Name:  matrix.h
-   Contains the definition for the class matrix.  
+Name:  mystring.h
+   Contains the definition for the class my_string.  
 
-Name: matrix.cpp
-   Defines and implements the matrix class for implementing a matrix.  
-   This class provides routines to construct and get the matrix, as
-   well as overloaded operators to add and multpliply two matrices.
-
-Name: matrix_functions.h
-   Contains the prototypes for the matrix program support functions.
-
-Name: matrix_functions.cpp
-   Includes functions to display a greeting, populate two arrays
-   from a data file, and display the sum and product of two matrices.
+Name: mystring.cpp
+  This is a simple version of the Standard Library string. 
+  It is part of the namespace main_savitch_4, from the textbook
+  "Data Structures and Other Objects Using C++"
+  by Michal Main and Walter Savitch
    
    
 *******************************************************
@@ -50,37 +47,5 @@ Name: matrix_functions.cpp
 
    The program runs successfully.  
    
-   The program was developed and tested on gnu g++ 4.4.2.  It was 
+   The program was developed in Visual Studios 2015 and tested on gnu g++ 4.4.2.  It was 
    compiled, run, and tested on gcc ouray.cudenver.edu.
-
-
-*******************************************************
-*  How to build and run the program
-*******************************************************
-
-1. Uncompress the homework.  The homework file is compressed.  
-   To uncompress it use the following commands 
-       % unzip [1234HW1]
-
-   Now you should see a directory named homework with the files:
-        main.cpp
-        matrix.h
-        matrix.cpp
-	matrix_functions.h
-	matrix_functions.cpp
-        makefile
-        Readme.txt
-
-2. Build the program.
-
-    Change to the directory that contains the file by:
-    % cd [1234HW1] 
-
-    Compile the program by:
-    % make
-
-3. Run the program by:
-   % ./[matrix]
-
-4. Delete the obj files, executables, and core dump by
-   %./make clean

@@ -1,7 +1,7 @@
 /* 
  *Name: Nathaniel Dore
- *Class: CSCI <<CHANGE ME>>
- *Description: [fill in description]
+ *Class: CSCI 2421
+ *Description: A file re-formater using my_string instead of STL string
  *Lab Partner: N/A
  *Status: development complete: final release build 
  */
@@ -22,22 +22,19 @@ int main( )
 
 	ifstream fin;
 	ofstream fout;
-	int max;
+	int max = 0;
 
-	cout << "Greetings. How many characters would you like per line?\nMax Characters:";
-	cin >> max;
+	//User input
+	cout << "Greetings. How many characters would you like per line?\nMax Characters(1 - 100):";
+	do
+	{
+		cin >> max;
+		if (max < 1 || max > 100)
+			cout << "\nNot within the range 1-100. Try again\n";
+	} while (max < 1 || max > 100); //ensuring the user's number is within the acceptable range.
 
 	formatInput(fin, fout, max);
 
-	/*
-	Remember to
-	rename the files! :)
-	change the date in the readme
-	change the class # in main.cpp and the readme
-	change the make file objects and exe name
-	*/
-
-    //system("Pause");
     return 0;
 }
 
@@ -68,7 +65,7 @@ void formatInput(ifstream& _fin, ofstream& _fout, int _charPerLine)
 	replace(inputVector.begin(), inputVector.end(), '\n', ' ');
 
 	//connecting to the outfile
-	_fout.open("data.txt");
+	_fout.open("data.out");
 	if (_fout.fail())
 		cout << "\nError connecting to the ofstream of the data file\n";
 
@@ -107,4 +104,13 @@ void formatInput(ifstream& _fin, ofstream& _fout, int _charPerLine)
 	}
 
 	_fout.close();
+
+	//displaying the newly formatted data
+	_fin.open("data.out");
+	while (_fin)
+	{
+		_fin.get(next);
+		cout << next;
+	}
+	_fin.close();
 }
