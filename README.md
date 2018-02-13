@@ -1,8 +1,8 @@
 ## DataStructures
 
->A collection of assigned Programs from class CSCI 2421
+*A collection of assigned Programs from class CSCI 2421*
 
-#Assingment Repositories
+**Assingment Repositories**
 
 >Select a link to see an assingment's code 
 
