@@ -35,6 +35,7 @@ int main( )
 
 	formatInput(fin, fout, max);
 
+	system("pause");
     return 0;
 }
 

@@ -45,7 +45,9 @@ Name: mystring.cpp
 *  Circumstances of programs
 *******************************************************
 
-   The program runs successfully.  
+   The program runs somewhat successfully. For no apparent reason it displays the wrong data to the 
+   console. When viewing data.out or looking at the results of the .exe file it looks correct, but 
+   CSE grid is displaying the data incorrectly.
    
    The program was developed in Visual Studios 2015 and tested on gnu g++ 4.4.2.  It was 
    compiled, run, and tested on gcc ouray.cudenver.edu.
