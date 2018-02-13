@@ -2,9 +2,8 @@
 
 *A collection of assigned Programs from class CSCI 2421*
 
-**Assingment Repositories**
-
->Select a link to see an assingment's code 
+**Assingment Repositories:** 
+>*Select a link to see an assingment's code* 
 
 [Homework 1](https://github.com/ndore444/DataStructures/tree/HW1/DoreNHW1)
 
