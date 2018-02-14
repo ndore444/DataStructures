@@ -213,3 +213,10 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+*.vcxproj
+*.filters
+*.sln
+DoreNHW3/DoreNHW3/data.out
+DoreNHW3/DoreNHW3/DoreNHW3.zip
+DoreNHW2/
+DoreNHW1/DoreNHW1/DoreNHW1.zip
