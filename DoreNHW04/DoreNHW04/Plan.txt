@@ -1,0 +1,36 @@
+Implement a main program that takes a text file as an input (as a command line argument or after a prompt) and processes followings.
+ The words in the input text file should be stored in a linked list, one word at a node. So you have to modify the node1.h to accommodate a string.
+  Then ask the user to pick two words, one for the starting and one for the ending word. 
+And search the original list to find a new sub-list that contains the items, as a starting and ending node, and print out the new list. When you print, 
+include the last word. So you have to implement the list_piece() to include the last word as well. If there's no such sub-list, just print out an error message.
+
+Once you printout the new sub-list, you need to sort the sub-list (in dictionary order) using the insertion sort algorithm and print out the 
+new sorted sub-list. When you sort the list, you must rearrange the link structure of nodes by updating associated pointers, not by copying/moving the 
+strings between nodes.
+
+Just in case, here's a detailed description of the insertion sort algorithm and a sample implementation.
+
+http://www.algolist.net/Algorithms/Sorting/Insertion_sort
+
+The input text file may have sentences with punctuation marks. But to simplify the issue, let's assume that the text file will have only five punctuation marks
+ . , ' - ? . So when you assign a string to a node, you need to get rid of those five punctuation marks and store only the word itself.
+
+Note that the main objective of this homework is to reinforce the understanding of linked list by implementing pertinent functions, not getting a sub list by
+ using any means. So I want you to use provided node class to implement this homework.
+
+
+ List of to do's
+1. Parse input 
+	-into indavidual nodes, each containing one of the words. 
+	-disclude the char punctuation, newlines
+		 '.' ',' ''' '-' '?''\n' 
+2. Gather user input
+	-user defines words to be included in a sub list:
+		-example:   input text: Hello, life is good. Keep flowing.
+				    User inputs life is good
+3. the program searches the list of nodes finding the included words and creates a new list: 
+					sublist now created including life is good
+4. sort the list
+		http://www.algolist.net/Algorithms/Sorting/Insertion_sort // an example of sorting
+		-alphebitically:  
+			good is life
