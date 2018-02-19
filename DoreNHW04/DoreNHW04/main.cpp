@@ -11,7 +11,7 @@
 #include <string>		//string & replace
 #include <fstream>		//ifstream
 #include <sstream>		//buffer operations
-#include <algorithm>	//remove
+#include <algorithm>		//remove
 
 using namespace std;
 
