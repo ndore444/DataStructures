@@ -24,7 +24,7 @@ Note that the main objective of this homework is to reinforce the understanding 
 1. Parse input 
 	-into indavidual nodes, each containing one of the words. 
 	-disclude the char punctuation, newlines
-		 '.' ',' ''' '-' '?''\n' 
+		 '.' ',' ''' '-' '?' '\n' 
 2. Gather user input
 	-user defines words to be included in a sub list:
 		-example:   input text: Hello, life is good. Keep flowing.

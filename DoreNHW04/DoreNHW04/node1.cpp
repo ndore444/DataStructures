@@ -16,8 +16,9 @@ namespace main_savitch_5
 	{
 		const node *cursor;
 		size_t answer;
-
+		  
 		answer = 0;
+
 		for (cursor = head_ptr; cursor != NULL; cursor = cursor->link())
 			++answer;
 
