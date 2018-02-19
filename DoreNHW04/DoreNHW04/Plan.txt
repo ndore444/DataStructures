@@ -19,6 +19,7 @@ Note that the main objective of this homework is to reinforce the understanding 
  using any means. So I want you to use provided node class to implement this homework.
 
 
+
  List of to do's
 1. Parse input 
 	-into indavidual nodes, each containing one of the words. 
@@ -33,4 +34,4 @@ Note that the main objective of this homework is to reinforce the understanding 
 4. sort the list
 		http://www.algolist.net/Algorithms/Sorting/Insertion_sort // an example of sorting
 		-alphebitically:  
-			good is life
+			good is life.
