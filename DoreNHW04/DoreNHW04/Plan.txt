@@ -1,6 +1,6 @@
 Implement a main program that takes a text file as an input (as a command line argument or after a prompt) and processes followings.
- The words in the input text file should be stored in a linked list, one word at a node. So you have to modify the node1.h to accommodate a string.
-  Then ask the user to pick two words, one for the starting and one for the ending word. 
+The words in the input text file should be stored in a linked list, one word at a node. So you have to modify the node1.h to accommodate a string.
+Then ask the user to pick two words, one for the starting and one for the ending word. 
 And search the original list to find a new sub-list that contains the items, as a starting and ending node, and print out the new list. When you print, 
 include the last word. So you have to implement the list_piece() to include the last word as well. If there's no such sub-list, just print out an error message.
 
@@ -17,7 +17,6 @@ The input text file may have sentences with punctuation marks. But to simplify t
 
 Note that the main objective of this homework is to reinforce the understanding of linked list by implementing pertinent functions, not getting a sub list by
  using any means. So I want you to use provided node class to implement this homework.
-
 
 
  List of to do's

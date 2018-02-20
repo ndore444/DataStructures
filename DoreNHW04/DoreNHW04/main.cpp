@@ -11,9 +11,12 @@
 #include <string>		//string & replace
 #include <fstream>		//ifstream
 #include <sstream>		//buffer operations
-#include <algorithm>		//remove
+#include <algorithm>	//remove
+
+#include "node1.h"
 
 using namespace std;
+using namespace main_savitch_5;
 
 //function definitions
 
@@ -23,6 +26,7 @@ vector<string> createWordList(string _s);
 vector<string> parseFile(string _fileName);
 //
 void searchNodes(vector<string> _wordList);
+
 
 
 int main() 
@@ -36,7 +40,11 @@ int main()
 		 << "Enter the words all on one line seperated by a space between each.\n";
 	getline(cin, userInput);
 
+	node* newList = new node;
+
 	wordList = createWordList(userInput);
+
+	addList(newList, wordList);
 
 	system("Pause");
 	return 0;

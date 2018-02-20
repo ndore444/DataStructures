@@ -135,4 +135,10 @@ namespace main_savitch_5
 		}
 	}
 
+	void addList(node *& _node, vector<string> _list)
+	{
+		for (int i = 0; i < _list.size(); i++)
+			list_insert(_node, _list[i]);
+	}
+
 }
