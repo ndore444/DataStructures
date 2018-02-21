@@ -6,7 +6,7 @@
 *Status: development complete: final release build
 */
 
-#include <iostream>		//cin/cout
+#include <iostream>		//cin/cout sizeof()
 #include <vector>		//vector
 #include <string>		//string & replace
 #include <fstream>		//ifstream
@@ -24,27 +24,32 @@ using namespace main_savitch_5;
 vector<string> createWordList(string _s);
 //dynamically parses text from _fileName into a list of words disregarding punctuation and capitalization
 vector<string> parseFile(string _fileName);
-//
-void searchNodes(vector<string> _wordList);
+
 
 
 
 int main() 
 {
 	string userInput;
-	vector<string> wordList;
-	wordList = parseFile("input.txt");
+	vector<string> inputList, userList;
+	inputList = parseFile("input.txt");
+
+	//building a linked list
+	node* linkedList = new node;
+
+	//adding the input file to the linked list
+	addList(linkedList, inputList);
 
 	//User input
 	cout << "Welcome! Please type the words you would like to search for\n"
-		 << "Enter the words all on one line seperated by a space between each.\n";
+		<< "Enter the words all on one line seperated by a space between each.\n";
 	getline(cin, userInput);
 
-	node* newList = new node;
+	//creating a vector from user's input words 
+	userList = createWordList(userInput);
 
-	wordList = createWordList(userInput);
-
-	addList(newList, wordList);
+	//searching the linked list for user's search words
+	searchLinkedList(linkedList, userList);
 
 	system("Pause");
 	return 0;

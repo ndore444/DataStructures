@@ -7,6 +7,8 @@
 #include "node1.h"
 #include <cassert>    // Provides assert
 #include <cstdlib>    // Provides NULL and size_t
+#include <string>
+
 using namespace std;
 
 namespace main_savitch_5
@@ -139,6 +141,23 @@ namespace main_savitch_5
 	{
 		for (int i = 0; i < _list.size(); i++)
 			list_insert(_node, _list[i]);
+	}
+
+	void searchLinkedList(node* &_node, vector<string> _searchList)
+	{
+
+		node* tempNode = new node;
+
+		for (int i = 0; i < _searchList.size(); i++)
+		{
+			tempNode = (list_search(_node, _searchList[i]));
+			string test = tempNode->data();
+
+			if (tempNode->data() == "hello");
+				list_remove(list_search(_node, _searchList[i]));
+
+		}
+
 	}
 
 }

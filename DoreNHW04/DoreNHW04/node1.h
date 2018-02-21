@@ -177,7 +177,7 @@ namespace main_savitch_5
 	void list_clear(node*& head_ptr);
 	void list_copy(const node* source_ptr, node*& head_ptr, node*& tail_ptr);
 	void addList(node* &_node, vector<string> _list);
-	void displayList(node* &_node);
+	void searchLinkedList(node* &_node, vector<string> _searchList);
 }
 
 #endif
