@@ -145,19 +145,25 @@ namespace main_savitch_5
 
 	void searchLinkedList(node* &_node, vector<string> _searchList)
 	{
-
 		node* tempNode = new node;
 
 		for (int i = 0; i < _searchList.size(); i++)
 		{
-			tempNode = (list_search(_node, _searchList[i]));
-			string test = tempNode->data();
-
-			if (tempNode->data() == "hello");
-				list_remove(list_search(_node, _searchList[i]));
-
+			
+			while (_node != nullptr)
+				{
+					
+				}
 		}
 
 	}
 
 }
+
+/*
+tempNode = (list_search(_node, _searchList[i]));
+string test = tempNode->data();
+
+if (tempNode->data() == "hello");
+list_remove(list_search(_node, _searchList[i]));
+*/
