@@ -14,9 +14,13 @@
 *  Description of the program
 *******************************************************
 
-The program "matrix" reads integers from a data file, and uses
-the data to implement two matrices.  It then outputs the matrices,
-and computes and outputs the sum and product of the matrices.
+
+this program reads in a list of words from a file called dictionary.txt
+and stores them in a stl list of type DictEntry. The stored list is then
+sorted and searched for certain words. Specific search words are contained
+within findwords.txt. A output file called revsorted.txt contains a reversed
+sorted list of the original contents contained in dictionary.txt (the contents
+of the featured list). 
 
 
 *******************************************************
@@ -25,24 +29,25 @@ and computes and outputs the sum and product of the matrices.
 
 Name:  main.cpp
    Main program.  This is the driver program that calls sub-functions
-   to read data from an input file, use the data to create two matrices,
-   and compute and display their sum and product.
+   to read data from two input files, one containing the contents to 
+   be created into a dictionary and one to be used to parse in search
+   words. The dictionary is then sorted and displayed, as well as searched
+   with results displayed. Finally the dictionary list is stored in an output
+   file.
 
-Name:  matrix.h
-   Contains the definition for the class matrix.  
+Name:  DictEntry.h
+   Contains the definition for the class DictEntry, as well as the member 
+   function declarations and definitions. Contains a wordType word and 
+   an unused definition variable. 
 
-Name: matrix.cpp
-   Defines and implements the matrix class for implementing a matrix.  
-   This class provides routines to construct and get the matrix, as
-   well as overloaded operators to add and multpliply two matrices.
+Name: dictionary.h
+   Contains the definition for the dictionary class.
 
-Name: matrix_functions.h
-   Contains the prototypes for the matrix program support functions.
+Name: dictionary.cpp
+   includes functions to create a dictionary list of type DictEntry. This 
+   List can be sorted, and searched in multiple ways. The list may also be 
+   stored in an output file of specified name.
 
-Name: matrix_functions.cpp
-   Includes functions to display a greeting, populate two arrays
-   from a data file, and display the sum and product of two matrices.
-   
    
 *******************************************************
 *  Circumstances of programs
@@ -50,37 +55,5 @@ Name: matrix_functions.cpp
 
    The program runs successfully.  
    
-   The program was developed and tested on gnu g++ 4.4.2.  It was 
-   compiled, run, and tested on gcc ouray.cudenver.edu.
-
-
-*******************************************************
-*  How to build and run the program
-*******************************************************
-
-1. Uncompress the homework.  The homework file is compressed.  
-   To uncompress it use the following commands 
-       % unzip [1234HW1]
-
-   Now you should see a directory named homework with the files:
-        main.cpp
-        matrix.h
-        matrix.cpp
-	matrix_functions.h
-	matrix_functions.cpp
-        makefile
-        Readme.txt
-
-2. Build the program.
-
-    Change to the directory that contains the file by:
-    % cd [1234HW1] 
-
-    Compile the program by:
-    % make
-
-3. Run the program by:
-   % ./[matrix]
-
-4. Delete the obj files, executables, and core dump by
-   %./make clean
+   The program was developed in VS 2015 community and tested on gnu g++ 4.4.2.  
+   It was compiled, run, and tested on gcc ouray.cudenver.edu.

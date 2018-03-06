@@ -11,9 +11,9 @@ CXXFLAGS = -g -std=c++11
 
 LIBS = -lm
 
-OBJS = Main.o classExample.o
+OBJS = main.o dictionary.o
 
-TARGET = <<change to name of exe>>
+TARGET = doreNHW5
 
 $(TARGET): $(OBJS)
 	$(CC) -o $@ $(OBJS) $(LIBDIR) $(LIBS)

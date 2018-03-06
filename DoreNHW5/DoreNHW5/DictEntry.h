@@ -14,9 +14,9 @@ public:
 	void setWord(wordType _word) { word = _word; }
 	wordType getDef() { return definition; }
 	void setDef(wordType _def) { definition = _def; }
-	bool operator < (const DictEntry &entry) const {
-		return (word < entry.word);
-	}
+	bool operator < (const DictEntry &entry) const { return (word < entry.word); }
+	bool operator > (const DictEntry &entry) const { return (word > entry.word); }
+	bool operator == (const DictEntry &entry) const { return (word == entry.word); }
 
 };
 
