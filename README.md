@@ -11,4 +11,4 @@
 
 [Homework 3](https://github.com/ndore444/DataStructures/tree/HW3/DoreNHW3/DoreNHW3)
 
-[Homework 5](https://github.com/ndore444/DataStructures/tree/HW5/DoreNHW5)
+[Homework 5](https://github.com/ndore444/DataStructures/tree/HW5/DoreNHW5/DoreNHW5)
