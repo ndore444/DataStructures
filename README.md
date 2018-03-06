@@ -10,3 +10,5 @@
 [Homework 2](https://github.com/ndore444/DataStructures/tree/HW2?files=1)
 
 [Homework 3](https://github.com/ndore444/DataStructures/tree/HW3/DoreNHW3/DoreNHW3)
+
+[Homework 5](https://github.com/ndore444/DataStructures/tree/HW5/DoreNHW5)
